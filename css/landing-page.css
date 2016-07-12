@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: '微软雅黑', 'Microsoft YaHei',Helvetica,Arial,sans-serif;
+    font-family:Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -35,8 +35,8 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/menpai.jpg) no-repeat center center;
-    background-size: auto 100%;
+    background: url(../img/background-2.jpg) no-repeat;
+    background-size:100% auto ;
     margin-top: 50px;
 }
 
@@ -47,14 +47,18 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 40%;
-    padding-bottom: 20%;
+    padding-top: 55%;
+    padding-bottom: 15%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 5em;
+    font-weight: 600;
+    color: #F5F9F8;
+    /* background-color: #fff; */
+    display: inline-block;
 }
 
 .intro-divider {
@@ -65,6 +69,7 @@ h6 {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 32px;
 }
 
 @media(max-width:767px) {
@@ -89,7 +94,13 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+
+
 }
+
+.img-responsive{
+        width: 90%;
+    }
 
 .network-name {
     text-transform: uppercase;
