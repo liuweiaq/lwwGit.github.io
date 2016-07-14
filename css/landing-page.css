@@ -54,7 +54,7 @@ h6 {
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 600;
     color: #F5F9F8;
     /* background-color: #fff; */
@@ -238,23 +238,24 @@ p.copyright {
 .caption {
     width: 60%;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 20%;
     text-align: center;
 }
 .caption h1 {
-    color: #444;
-    font-size: 46px;
+    color: #fff;
+    font-size: 3em;
     font-weight: 500;
     letter-spacing: -1px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 .caption h1 span {
     color: #dd4a49;
 }
 .caption p {
-    color: #444;
+    color: #fff;
     line-height: 1.5em;
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
     margin-top: 20px;
 }
@@ -309,7 +310,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 @media (max-width:1024px) {
  .caption {
  width: 63%;
- top: 25%;
+ top: 45%;
  left: 19%;
 }
 }
@@ -317,7 +318,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 @media (max-width:768px) {
 .caption {
     width: 70%;
-    top: 10%;
+    top: 30%;
     left: 13%;
 }
 .caption h3 {
@@ -406,11 +407,11 @@ ul.callbacks_tabs.callbacks1_tabs {
 @media (max-width: 768px) {
 .caption {
     width: 56%;
-    top: 37%;
+    top: 47%;
     left: 22%;
 }
 .caption h1 {
-    font-size: 36px;
+    font-size: 3em;
     letter-spacing: -1px;   
 }
 }
@@ -472,7 +473,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     width: 58%;
 }
 .caption h1 {
-    font-size: 26px;
+    font-size: 2em;
     letter-spacing: 1px;
 }
 .callbacks_nav {
@@ -486,4 +487,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 .callbacks_nav.next {
     background-position: -20px -47px;
 }
+}
+
+.index_container{
+    margin: 60px auto 20px;
+}
+
+#slider img{
+    -webkit-mask: rgba(255,255,255,0.8)
 }
