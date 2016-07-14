@@ -29,6 +29,12 @@ h6 {
     font-size: 18px;
     font-weight: 400;
 }
+.indent{
+     text-indent: 36px;
+}
+.lead span{
+    font-weight: 600;
+}
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
@@ -98,9 +104,9 @@ h6 {
 
 }
 
-.img-responsive{
-        width: 90%; 
-    }
+img.img-responsive{
+        width: 100%; 
+}
 
 .network-name {
     text-transform: uppercase;
@@ -219,6 +225,7 @@ p.copyright {
     -webkit-backface-visibility: hidden;
     position: absolute;
     display: none;
+    text-align: center;
     width: 100%;
     left: 0;
     top: 0;
@@ -230,16 +237,17 @@ p.copyright {
 }
 .rslides img {
     display: block;
+    position: relative;
     height: auto;
-    float: left;
     width: 100%;
     border: 0;
 }
 .caption {
-    width: 60%;
     position: absolute;
-    top: 45%;
-    left: 20%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     text-align: center;
 }
 .caption h1 {
@@ -248,14 +256,16 @@ p.copyright {
     font-weight: 500;
     letter-spacing: -1px;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    margin-top: 35%;
 }
 .caption h1 span {
     color: #dd4a49;
 }
 .caption p {
     color: #fff;
-    line-height: 1.5em;
-    font-size: 1.5em;
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: 100;
     text-align: center;
     margin-top: 20px;
 }
@@ -308,35 +318,33 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
  /*-- responsive-mediaquries --*/
 @media (max-width:1024px) {
- .caption {
- width: 63%;
- top: 45%;
- left: 19%;
+ .caption h1 {
+    margin-top: 35%;
+}
+.slider .btn {
+    font-size: 12px;
+    margin: 3em 0 0;
+    padding: 9px 18px;
 }
 }
 
 @media (max-width:768px) {
-.caption {
-    width: 70%;
-    top: 30%;
-    left: 13%;
-}
-.caption h3 {
-    font-size: 1.5em;
+ .caption h1 {
+    margin-top: 30%;
 }
 .callbacks_nav {
     top: 55%;
 }
+.slider .btn {
+    font-size: 12px;
+    margin: 2em 0 0;
+    padding: 9px 18px;
+}
 }
 
 @media (max-width:640px) {
-.caption {
-    width: 70%;
-    top: 5%;
-    left: 13%;
-}
-.caption h3 {
-    font-size: 1.5em;
+ .caption h1 {
+    margin-top: 35%;
 }
 .callbacks_tabs a:after {
     height: 10px;
@@ -345,21 +353,15 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 @media (max-width:480px) {
-.caption {
-    width: 70%;
-    top: 5%;
-    left: 13%;
+ .caption h1 {
+    margin-top: 35%;
 }
 .callbacks_nav {
     top: 60%;
 }
 .caption p {
-    height: 25px;
     overflow: hidden;
     margin: 0.5em 0;
-}
-.caption h3 {
-    font-size: 1.4em;
 }
 .callbacks_tabs a:after {
     height: 4px;
@@ -372,21 +374,15 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 @media (max-width:320px) {
-.caption {
-    width: 70%;
-    top: 5%;
-    left: 13%;
+ .caption h1 {
+    margin-top: 35%;
 }
 .callbacks_nav {
     top: 63%;
 }
 .caption p {
-    height: 25px;
     overflow: hidden;
     margin: 0.2em 0;
-}
-.caption h3 {
-    font-size: 1em;
 }
 .callbacks_tabs a:after {
     height: 4px;
@@ -400,25 +396,22 @@ ul.callbacks_tabs.callbacks1_tabs {
 @media (max-width:1366px) {
 .caption p {
     overflow: hidden;
-    height: 35px;
 }
 }
 
 @media (max-width: 768px) {
-.caption {
-    width: 56%;
-    top: 47%;
-    left: 22%;
-}
-.caption h1 {
-    font-size: 3em;
+ .caption h1 {
+    margin-top: 35%;
+    font-size: 2.5em;
     letter-spacing: -1px;   
 }
+ .caption p{
+    font-size: 1.5em;
+ }
 }
 
 @media (max-width: 640px) {
 .caption p {
-    height: 22px;
     font-size: 0.8em;
 }
 .callbacks_nav {
@@ -441,6 +434,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 @media (max-width: 480px) {
 .caption h1 {
     font-size: 2em;
+    margin-top: 35%;
 }
 
 .callbacks_nav {
@@ -458,6 +452,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .caption p {
     margin: 0;
+    font-size: 1.3em;
 }
 .form_details input[type="text"], .form_details textarea {
     padding: 8px;
@@ -475,6 +470,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .caption h1 {
     font-size: 2em;
     letter-spacing: 1px;
+    margin-top: 35%;
 }
 .callbacks_nav {
     height: 27px;
@@ -496,3 +492,4 @@ ul.callbacks_tabs.callbacks1_tabs {
 #slider img{
     -webkit-mask: rgba(255,255,255,0.8)
 }
+
